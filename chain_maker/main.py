@@ -5,6 +5,7 @@ import sys
 
 
 
+
 client = OpenAI(
     api_key=os.getenv("OPENAI_API"),
 )
@@ -22,7 +23,7 @@ def seek_info():
     output = os.popen(f"python seek_info.py {file_path}").read()
     print(output)
 
-
+# 
 def set_ai():
     model = "gpt-3.5-turbo"
     prompt = "I will give you some information for make ROP_CHAIN with pwntools"
